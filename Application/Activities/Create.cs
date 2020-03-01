@@ -41,7 +41,7 @@ namespace Application.Activities
                     Date = request.Date,
                     City = request.City,
                     Venue = request.Venue
-                }
+                };
 
                 _context.Activities.Add(activitiy);
                 var success = await _context.SaveChangesAsync() > 0;
